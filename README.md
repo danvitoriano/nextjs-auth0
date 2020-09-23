@@ -13,12 +13,20 @@ Read more: [https://auth0.com/blog/ultimate-guide-nextjs-authentication-auth0/](
 
 ## How to use
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+You can test your code in real time with CodeSandBox version [https://codesandbox.io/s/nextjs-auth0-r2z04] or fork this repository and clone it to your localhost:
 
 ```bash
-npx create-next-app --example auth0 auth0
+npm i
 # or
-yarn create next-app --example auth0 auth0
+yarn
+```
+
+To run on http://localhost:3000:
+
+```bash
+npm run dev
+# or
+yarn dev
 ```
 
 ## Configuring Auth0
@@ -34,7 +42,9 @@ yarn create next-app --example auth0 auth0
 
 ### Set up environment variables
 
-To connect the app with Auth0, you'll need to add the settings from your Auth0 application as environment variables
+To connect the app with Auth0, you'll need to add the settings from your Auth0 application as **environment variables**.
+
+**- Test on localhost:**
 
 Copy the `.env.local.example` file in this directory to `.env.local` (which will be ignored by Git):
 
@@ -52,9 +62,17 @@ Then, open `.env.local` and add the missing environment variables:
 - `SESSION_COOKIE_SECRET` - A unique secret used to encrypt the cookies, has to be at least 32 characters. You can use [this generator](https://generate-secret.now.sh/32) to generate a value.
 - `SESSION_COOKIE_LIFETIME` - How long a session lasts in seconds. The default is 2 hours.
 
+**- Test on Vercel:**
+
+You must use the same environment variables as before, but you will have to input each one into Vercel Dashboard > Settings > Environment Variables.
+
+Remember to add Vercel production URL addresses to Auth0's _Allowed Callback URLs_ and _Allowed Logout URLs_ fields. More details on **'Deploy on Vercel'** section.
+
 ## Deploy on Vercel
 
 You can deploy this app to the cloud with [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+
+You can also deploy on Vercel right from CodeSandBox project. You can register and continuos delivery/deploy on Vercel for **free**.
 
 ### Deploy Your Local Project
 

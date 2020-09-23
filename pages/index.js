@@ -26,8 +26,8 @@ function Home() {
         <>
           <h4>Rendered user info on the client</h4>
           <img src={user.picture} alt="user picture" />
-          <p>nickname: {user.nickname}</p>
-          <p>name: {user.name}</p>
+          <p>Nickname: {user.nickname}</p>
+          <p>Name: {user.name}</p>
         </>
       )}
     </Layout>
