@@ -10,8 +10,8 @@ function Profile({ user }) {
       <div>
         <h3>Profile (server rendered)</h3>
         <img src={user.picture} alt="user picture" />
-        <p>nickname: {user.nickname}</p>
-        <p>name: {user.name}</p>
+        <p>Nickname: {user.nickname}</p>
+        <p>Name: {user.name}</p>
       </div>
     </Layout>
   )
