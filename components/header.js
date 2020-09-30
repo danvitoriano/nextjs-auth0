@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from "next/link";
 
 function Header({ user, loading }) {
   return (
@@ -19,13 +19,18 @@ function Header({ user, loading }) {
             (user ? (
               <>
                 <li>
+                  <Link href="/fetch">
+                    <a>Fetch</a>
+                  </Link>
+                </li>
+                <li>
                   <Link href="/profile">
-                    <a>Client-rendered profile</a>
+                    <a>CSR Profile</a>
                   </Link>
                 </li>
                 <li>
                   <Link href="/advanced/ssr-profile">
-                    <a>Server rendered profile (advanced)</a>
+                    <a>SSR Profile</a>
                   </Link>
                 </li>
                 <li>
@@ -40,6 +45,7 @@ function Header({ user, loading }) {
         </ul>
       </nav>
 
+      {/* css inline usando a tag style do próprio jsx */}
       <style jsx>{`
         header {
           padding: 0.2rem;
@@ -75,7 +81,7 @@ function Header({ user, loading }) {
         }
       `}</style>
     </header>
-  )
+  );
 }
 
-export default Header
+export default Header;
