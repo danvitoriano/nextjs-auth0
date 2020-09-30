@@ -15,14 +15,14 @@ function Header({ user, loading }) {
               <a>About</a>
             </Link>
           </li>
+          <li>
+            <Link href="/fetch">
+              <a>Fetch</a>
+            </Link>
+          </li>
           {!loading &&
             (user ? (
               <>
-                <li>
-                  <Link href="/fetch">
-                    <a>Fetch</a>
-                  </Link>
-                </li>
                 <li>
                   <Link href="/profile">
                     <a>CSR Profile</a>
@@ -38,10 +38,10 @@ function Header({ user, loading }) {
                 </li>
               </>
             ) : (
-              <li>
-                <a href="/api/login">Login</a>
-              </li>
-            ))}
+                <li>
+                  <a href="/api/login">Login</a>
+                </li>
+              ))}
         </ul>
       </nav>
 
