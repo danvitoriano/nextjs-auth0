@@ -1,5 +1,5 @@
 import React from "react";
-import { useContext, useState } from "react";
+import { useState } from "react";
 import Head from "next/head";
 import Header from "./header";
 
@@ -22,20 +22,22 @@ function Layout({ user, loading = false, children }) {
     <ThemeContext.Provider value={theme}>
       <Head>
         <title>Next.js with Auth0</title>
+        <link rel="stylesheet" href={"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"} />
       </Head>
 
       <Header user={user} loading={loading} />
 
       <main>
-        <button
-          onClick={() => {
-            theme === themes.dark
-              ? setTheme(themes.light)
-              : setTheme(themes.dark);
-          }}
-        >
-          {theme === themes.light ? "light" : "dark"}
-        </button>
+        <div className="container">
+          <button className="btn btn-secondary"
+            onClick={() => {
+              theme === themes.dark
+                ? setTheme(themes.light)
+                : setTheme(themes.dark);
+            }}
+          >
+            {theme === themes.light ? "Light Mode" : "Dark Mode"}
+          </button></div>
         <div className="container">{children}</div>
       </main>
 

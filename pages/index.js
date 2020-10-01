@@ -18,7 +18,7 @@ function Home() {
           </p>
           <p>
             Once you have logged in you should be able to click in{" "}
-            <i>Profile</i> and <i>Logout</i>
+            <i>CSR/SSR Profile</i> and <i>Logout</i>
           </p>
         </>
       )}
