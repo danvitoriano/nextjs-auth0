@@ -1,5 +1,13 @@
 # Next.js and Auth0 Example
 
+Você pode acessar esse projeto em [https://codesandbox.io/s/amazing-snowflake-qtcgh](https://codesandbox.io/s/amazing-snowflake-qtcgh). Faça login com sua conta Github e fork para o seu perfil.
+
+[Live Demo](https://nextjs-auth0-seven.vercel.app/)
+
+Você também pode clonar o projeto e rodar normalmente na sua máquina. Basta ter o Node.js instalado.
+
+## Challenge Integrate with Auth0 Social Login
+
 This example shows how you can use `@auth0/nextjs-auth` to easily add authentication support to your Next.js application. It tries to cover a few topics:
 
 - Signing in
