@@ -6,6 +6,8 @@ Você pode acessar esse projeto em [https://codesandbox.io/s/amazing-snowflake-q
 
 Você também pode clonar o projeto e rodar normalmente na sua máquina. Basta ter o Node.js instalado.
 
+Você também pode fazer o deploy do projeto gartuitamente pela Vercel. Utilize o plugin no CodeSandBox ou acesse [https://vercel.com/](https://vercel.com/).
+
 ## Challenge Integrate with Auth0 Social Login
 
 This example shows how you can use `@auth0/nextjs-auth` to easily add authentication support to your Next.js application. It tries to cover a few topics:
