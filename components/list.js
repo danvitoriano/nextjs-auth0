@@ -9,11 +9,11 @@ export default (props) => {
     }
 
     return (
-        <div>
-            <label style={{ display: 'block' }}>Filtrar</label>
-            <input type="search" value={count} onChange={e => onTodoChange(e.target.value)} />
+        <>
+            <label style={{ display: 'block' }}>Practice how you can use React components easily integrated with Next.js filtering this list:</label>
+            <input className="form-control" type="number" value={count} onChange={e => onTodoChange(e.target.value)} />
             <ListItem {...props} filter={count} />
-        </div>
+        </>
     );
 };
 
@@ -30,7 +30,7 @@ const ListItem = (props) => {
                         return query.id === filter
                     }
                 ).map((item, index) => (
-                    <li key={index}>hi {item.id}</li>
+                    <li key={index}>{item.id}</li>
                 ))}
         </ul>
     );

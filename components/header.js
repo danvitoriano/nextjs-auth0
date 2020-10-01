@@ -16,8 +16,8 @@ function Header({ user, loading }) {
             </Link>
           </li>
           <li>
-            <Link href="/fetch">
-              <a>Fetch</a>
+            <Link href="/users">
+              <a>Users</a>
             </Link>
           </li>
           {!loading &&
